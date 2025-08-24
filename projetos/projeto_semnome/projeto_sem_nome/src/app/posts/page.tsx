@@ -1,6 +1,7 @@
+import Link from "next/link";
 import Banner from "../ui/components/banner"
 
-interface PostProps {
+export interface PostProps {
     id: number;
     title: string;
     body: string;
@@ -19,10 +20,10 @@ export default async function Page(){
             <Banner>Posts</Banner>
             <div className="flex flex-col gap-3 m-2.5">
                 {data.posts.map(post=>(
-                    <div key={post.id} className="bg-gray-200 space-y-2 p-3">
+                    <Link href={`/posts/${post.id}`} key={post.id} className="bg-gray-200 space-y-2 p-3">
                         <h1 className="text-2xl">{post.title}</h1>
                         <p>{post.body}</p>
-                    </div>
+                    </Link>
                 )
                 )}
             </div>
