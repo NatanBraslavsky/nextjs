@@ -1,13 +1,31 @@
-import { ReactNode } from "react";
+"use client"
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-interface NavLinkProps {
-    href: string;
-    children: ReactNode;
-}
+const links = [
+    {name: "Home", href: "/"},
+    {name: "Sobre", href: "/sobre"},
+    {name: "Posts", href: "/posts"},
+];
 
-export default function NavLink({ href, children }: NavLinkProps){
-    return(
-        <Link href={href} className="hover:text-gray-800">{children}</Link>
-    )
+export default function NavLink() {
+    const pathname = usePathname();    
+    return (
+        <>
+            {links.map((link) => {
+                return (
+                    <li>
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={`transition-colors ${pathname === link.href ? "text-blue-500" : "hover:text-blue-600"}`}
+                        >
+                            {link.name}
+                        </Link>
+                    </li>
+                )
+            })}
+        </>
+    );
 }
