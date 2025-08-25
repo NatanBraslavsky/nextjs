@@ -15,11 +15,11 @@ export default function NavLink() {
         <>
             {links.map((link) => {
                 return (
-                    <li>
+                    <li key={link.href}>
                         <Link
                             key={link.href}
                             href={link.href}
-                            className={`transition-colors ${pathname === link.href ? "text-blue-500" : "hover:text-blue-600"}`}
+                            className={`transition-colors ${pathname === link.href ? "text-blue-800" : "hover:text-blue-800"}`}
                         >
                             {link.name}
                         </Link>

@@ -10,8 +10,7 @@ export default async function DetailPost({
     const data: PostProps = await response.json();
 
     return(
-
-        <div>
+        <div className="text-white">
             <h1>Detalhes do post: {id}</h1>
             <h1>{data.title}</h1>
             <p>{data.body}</p>
