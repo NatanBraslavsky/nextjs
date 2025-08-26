@@ -3,11 +3,12 @@ import Image from "next/image"
 
 export interface LinhaUsuarioProps {
     usuario: Usuario
+    onClick?:(usuario: Usuario) => void
 }
 
 export default function LinhaUsuario(props: LinhaUsuarioProps){
     return (
-        <div className="bg-zinc-900 flex items-center gap-5 p-4 rounded-md">
+        <div className="bg-zinc-900 flex items-center gap-5 p-4 rounded-md cursor-pointer" onClick={() => props.onClick?.(props.usuario)} >
             <Image 
                 src="https://avatar.iran.liara.run/public" width={50} height={50} className="rounded-full" 
                 alt="Avatar"
