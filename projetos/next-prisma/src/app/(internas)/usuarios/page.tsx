@@ -27,7 +27,7 @@ export default function Page(){
             ) : (
                 <>
                     <div className="flex justify-end">
-                        <button className=" flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-md" onClick={() => alterarUsuario({})}>
+                        <button className=" flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-md cursor-pointer" onClick={() => alterarUsuario({})}>
                             <IconPlus/>
                             <span>Novo Usuário</span>
                         </button>

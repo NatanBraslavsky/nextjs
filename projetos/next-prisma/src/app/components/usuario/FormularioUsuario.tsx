@@ -33,14 +33,14 @@ export default function FormularioUsuario(props: FormularioUsuarioProps){
             />
             <div className="flex justify-between">
                 <div className="flex gap-5">
-                    <button className="bg-blue-500 px-4 py-2 rounded-md" onClick={props.salvar}>
+                    <button className="cursor-pointer bg-blue-500 px-4 py-2 rounded-md" onClick={props.salvar}>
                         Salvar
                     </button>
-                    <button className="bg-zinc-500 px-4 py-2 rounded-md" onClick={props.cancelar}>
+                    <button className="cursor-pointer bg-zinc-500 px-4 py-2 rounded-md" onClick={props.cancelar}>
                         Cancelar
                     </button>
                 </div>
-                <button className="bg-red-500 px-4 py-2 rounded-md" onClick={props.excluir}>
+                <button className="cursor-pointer bg-red-500 px-4 py-2 rounded-md" onClick={props.excluir}>
                     Excluir
                 </button>
             </div>
