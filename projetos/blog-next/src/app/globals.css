@@ -1,13 +1,10 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 body {
-  background: var(--foreground);
-  color: var(--background);
+  background: #0A0A0A;
+  color: #FFFFFF;
   font-family: "Roboto", sans-serif;
 }

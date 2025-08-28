@@ -11,7 +11,7 @@ export default function Saldos(){
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {saldos.map((saldo) => {
                 return (
-                    <Saldo key={saldo.nome} nome={saldo.nome}  valor={saldo.valor} />
+                    <Saldo key={saldo.nome} nome={saldo.nome}  valor={saldo.valor} />   
                 )
             })}
         </div>
