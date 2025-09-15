@@ -15,6 +15,6 @@
 
 <h2 id="technologies">💻 Techs</h2>
 
-<p ><span style="font-weight:bold">Backend:</span> Node.js, Express, Prisma</p>
-<p><span style="font-weight:bold">Frontend:</span> Next.js, React.js, TailwindCSS</p>
+<p ><span style="font-weight:bold">Backend:</span> Node.js, Express, Prisma, Typescript</p>
+<p><span style="font-weight:bold">Frontend:</span> Next.js, React.js, TailwindCSS, Typescript</p>
 <p><span style="font-weight:bold">Banco de Dados:</span> SQLite</p>
